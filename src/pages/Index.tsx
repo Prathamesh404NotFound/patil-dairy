@@ -1,4 +1,3 @@
-import '@/i18n';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Products from '@/components/Products';
