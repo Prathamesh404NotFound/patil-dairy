@@ -6,95 +6,99 @@
 
 @layer base {
   :root {
-    /* Warm creamy dairy-inspired palette */
-    --background: 40 30% 98%;
-    --foreground: 30 25% 15%;
+    /* Kolhapuri Dairy-inspired palette - Cream, Maroon, Saffron */
+    --background: 40 35% 98%;
+    --foreground: 350 25% 15%;
 
-    --card: 40 25% 97%;
-    --card-foreground: 30 25% 15%;
+    --card: 40 30% 97%;
+    --card-foreground: 350 25% 15%;
 
-    --popover: 40 25% 97%;
-    --popover-foreground: 30 25% 15%;
+    --popover: 40 30% 97%;
+    --popover-foreground: 350 25% 15%;
 
-    --primary: 35 80% 45%;
-    --primary-foreground: 40 30% 98%;
+    /* Kolhapuri Maroon as primary */
+    --primary: 350 65% 40%;
+    --primary-foreground: 40 35% 98%;
 
-    --secondary: 40 20% 92%;
-    --secondary-foreground: 30 25% 25%;
+    --secondary: 40 25% 92%;
+    --secondary-foreground: 350 25% 25%;
 
-    --muted: 40 15% 90%;
-    --muted-foreground: 30 15% 45%;
+    --muted: 40 20% 90%;
+    --muted-foreground: 350 15% 45%;
 
-    --accent: 145 45% 35%;
-    --accent-foreground: 40 30% 98%;
+    /* Saffron accent */
+    --accent: 35 90% 55%;
+    --accent-foreground: 350 25% 12%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 40 30% 98%;
+    --destructive-foreground: 40 35% 98%;
 
-    --border: 35 20% 88%;
-    --input: 35 20% 88%;
-    --ring: 35 80% 45%;
+    --border: 35 25% 88%;
+    --input: 35 25% 88%;
+    --ring: 350 65% 40%;
 
     --radius: 0.75rem;
 
     /* Custom design tokens */
-    --gold: 40 85% 55%;
-    --cream: 45 50% 95%;
-    --terracotta: 15 65% 50%;
-    --forest: 145 40% 30%;
+    --maroon: 350 65% 40%;
+    --saffron: 35 90% 55%;
+    --cream: 45 55% 95%;
+    --gold: 40 85% 50%;
+    --milk-white: 40 30% 99%;
 
-    --sidebar-background: 40 25% 97%;
-    --sidebar-foreground: 30 25% 25%;
-    --sidebar-primary: 35 80% 45%;
-    --sidebar-primary-foreground: 40 30% 98%;
-    --sidebar-accent: 40 20% 92%;
-    --sidebar-accent-foreground: 30 25% 25%;
-    --sidebar-border: 35 20% 88%;
-    --sidebar-ring: 35 80% 45%;
+    --sidebar-background: 40 30% 97%;
+    --sidebar-foreground: 350 25% 25%;
+    --sidebar-primary: 350 65% 40%;
+    --sidebar-primary-foreground: 40 35% 98%;
+    --sidebar-accent: 40 25% 92%;
+    --sidebar-accent-foreground: 350 25% 25%;
+    --sidebar-border: 35 25% 88%;
+    --sidebar-ring: 350 65% 40%;
   }
 
   .dark {
-    --background: 30 20% 8%;
-    --foreground: 40 25% 95%;
+    --background: 350 20% 8%;
+    --foreground: 40 30% 95%;
 
-    --card: 30 20% 12%;
-    --card-foreground: 40 25% 95%;
+    --card: 350 20% 12%;
+    --card-foreground: 40 30% 95%;
 
-    --popover: 30 20% 12%;
-    --popover-foreground: 40 25% 95%;
+    --popover: 350 20% 12%;
+    --popover-foreground: 40 30% 95%;
 
-    --primary: 35 75% 50%;
-    --primary-foreground: 30 20% 8%;
+    --primary: 350 60% 50%;
+    --primary-foreground: 350 20% 8%;
 
-    --secondary: 30 15% 18%;
-    --secondary-foreground: 40 25% 90%;
+    --secondary: 350 15% 18%;
+    --secondary-foreground: 40 30% 90%;
 
-    --muted: 30 15% 20%;
-    --muted-foreground: 40 15% 60%;
+    --muted: 350 15% 20%;
+    --muted-foreground: 40 20% 60%;
 
-    --accent: 145 40% 40%;
-    --accent-foreground: 30 20% 8%;
+    --accent: 35 85% 50%;
+    --accent-foreground: 350 20% 8%;
 
     --destructive: 0 62% 30%;
-    --destructive-foreground: 40 25% 95%;
+    --destructive-foreground: 40 30% 95%;
 
-    --border: 30 15% 22%;
-    --input: 30 15% 22%;
-    --ring: 35 75% 50%;
+    --border: 350 15% 22%;
+    --input: 350 15% 22%;
+    --ring: 350 60% 50%;
 
-    --gold: 40 80% 50%;
-    --cream: 40 20% 20%;
-    --terracotta: 15 55% 45%;
-    --forest: 145 35% 35%;
+    --maroon: 350 60% 50%;
+    --saffron: 35 85% 50%;
+    --cream: 40 25% 20%;
+    --gold: 40 80% 45%;
+    --milk-white: 350 15% 15%;
 
-    --sidebar-background: 30 20% 10%;
-    --sidebar-foreground: 40 25% 90%;
-    --sidebar-primary: 35 75% 50%;
-    --sidebar-primary-foreground: 30 20% 8%;
-    --sidebar-accent: 30 15% 18%;
-    --sidebar-accent-foreground: 40 25% 90%;
-    --sidebar-border: 30 15% 22%;
-    --sidebar-ring: 35 75% 50%;
+    --sidebar-background: 350 20% 10%;
+    --sidebar-foreground: 40 30% 90%;
+    --sidebar-primary: 350 60% 50%;
+    --sidebar-primary-foreground: 350 20% 8%;
+    --sidebar-accent: 350 15% 18%;
+    --sidebar-accent-foreground: 40 30% 90%;
+    --sidebar-border: 350 15% 22%;
+    --sidebar-ring: 350 60% 50%;
   }
 }
 
@@ -123,7 +127,15 @@
   }
 
   .gradient-primary {
-    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--gold)) 100%);
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--maroon)) 50%, hsl(var(--saffron)) 100%);
+  }
+
+  .gradient-maroon {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(350, 55%, 35%) 100%);
+  }
+
+  .gradient-saffron {
+    background: linear-gradient(135deg, hsl(var(--saffron)) 0%, hsl(var(--gold)) 100%);
   }
 
   .gradient-hero {
@@ -136,7 +148,12 @@
 
   .text-gradient {
     @apply bg-clip-text text-transparent;
-    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--terracotta)) 100%);
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--saffron)) 100%);
+  }
+
+  .text-gradient-maroon {
+    @apply bg-clip-text text-transparent;
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(350, 50%, 30%) 100%);
   }
 
   .hover-lift {
@@ -149,6 +166,14 @@
 
   .section-padding {
     @apply py-16 md:py-24 lg:py-32 px-4 md:px-8;
+  }
+
+  .page-container {
+    @apply min-h-screen bg-background;
+  }
+
+  .content-wrapper {
+    @apply pt-20 md:pt-24;
   }
 }
 
@@ -166,6 +191,19 @@
     animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   }
 
+  .animate-pulse-glow {
+    animation: pulseGlow 2s ease-in-out infinite;
+  }
+
+  @keyframes pulseGlow {
+    0%, 100% { 
+      box-shadow: 0 0 5px hsl(var(--primary) / 0.3), 0 0 20px hsl(var(--primary) / 0.2);
+    }
+    50% { 
+      box-shadow: 0 0 20px hsl(var(--primary) / 0.5), 0 0 40px hsl(var(--primary) / 0.3);
+    }
+  }
+
   .animate-shimmer {
     animation: shimmer 2s linear infinite;
     background: linear-gradient(
@@ -180,5 +218,14 @@
   @keyframes shimmer {
     0% { background-position: 200% 0; }
     100% { background-position: -200% 0; }
+  }
+
+  .animate-scroll-indicator {
+    animation: scrollBounce 2s ease-in-out infinite;
+  }
+
+  @keyframes scrollBounce {
+    0%, 100% { transform: translateY(0); opacity: 1; }
+    50% { transform: translateY(10px); opacity: 0.5; }
   }
 }

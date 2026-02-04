@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { Phone, MessageCircle } from 'lucide-react';
+import { FiPhone } from 'react-icons/fi';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const FloatingCTA = () => {
   return (
@@ -14,9 +15,10 @@ const FloatingCTA = () => {
         transition={{ delay: 1, type: 'spring', stiffness: 200 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
-        className="p-4 rounded-full bg-[#25D366] text-white shadow-lg hover:shadow-xl transition-shadow"
+        className="p-4 rounded-full bg-[#25D366] text-white shadow-lg hover:shadow-xl transition-shadow animate-pulse-glow"
+        aria-label="WhatsApp"
       >
-        <MessageCircle className="w-6 h-6" />
+        <FaWhatsapp className="w-6 h-6" />
       </motion.a>
 
       {/* Call Button */}
@@ -27,9 +29,10 @@ const FloatingCTA = () => {
         transition={{ delay: 1.2, type: 'spring', stiffness: 200 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
-        className="p-4 rounded-full gradient-primary text-primary-foreground shadow-lg hover:shadow-xl transition-shadow"
+        className="p-4 rounded-full gradient-maroon text-primary-foreground shadow-lg hover:shadow-xl transition-shadow"
+        aria-label="Call"
       >
-        <Phone className="w-6 h-6" />
+        <FiPhone className="w-6 h-6" />
       </motion.a>
     </div>
   );
