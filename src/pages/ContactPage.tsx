@@ -14,14 +14,14 @@ const ContactPage = () => {
       icon: FiMapPin,
       label: i18n.language === 'en' ? 'Address' : 'पत्ता',
       value: t('contact.address'),
-      href: 'https://maps.google.com/?q=16.6976,74.2291',
+      href: 'https://maps.google.com?q=PATIL%20DAIRY,%20Laxmipuri,%20Kolhapur,%20Maharashtra&ftid=0x0:0xae952c157a9f1566&entry=gps&shh=CAE&lucs=,94297699,94275415,94284481,94231188,94280568,47071704,94218641,94282134,94286869&g_st=ic',
       action: t('contact.getDirections'),
     },
     {
       icon: FiPhone,
       label: i18n.language === 'en' ? 'Phone' : 'फोन',
       value: t('contact.phone'),
-      href: 'tel:+919890679500',
+      href: 'tel:+919588679599',
       action: t('cta.call'),
     },
     {
@@ -35,12 +35,12 @@ const ContactPage = () => {
 
   return (
     <>
-      <SEO 
-        title={t('contact.pageTitle')} 
+      <SEO
+        title={t('contact.pageTitle')}
         description={t('contact.pageSubtitle')}
-        path="/contact" 
+        path="/contact"
       />
-      
+
       <div className="content-wrapper">
         {/* Page Header */}
         <section className="py-16 md:py-24 bg-gradient-to-b from-cream to-background">
@@ -117,7 +117,7 @@ const ContactPage = () => {
                     className="gradient-maroon text-primary-foreground shadow-xl flex-1 sm:flex-none"
                   >
                     <a
-                      href="https://wa.me/919890679500?text=Hello%2C%20I%20would%20like%20to%20place%20an%20order"
+                      href="https://wa.me/919588679599?text=Hello%2C%20I%20would%20like%20to%20place%20an%20order"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="gap-2"
@@ -127,33 +127,13 @@ const ContactPage = () => {
                     </a>
                   </Button>
                   <Button asChild size="lg" variant="outline" className="flex-1 sm:flex-none">
-                    <a href="tel:+919890679500" className="gap-2">
+                    <a href="tel:+919588679599" className="gap-2">
                       <FiPhone className="w-5 h-5" />
                       {t('cta.call')}
                     </a>
                   </Button>
                 </div>
 
-                {/* QR Code */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: 0.3 }}
-                >
-                  <Card className="p-8 text-center border border-border">
-                    <p className="text-muted-foreground mb-4 font-medium">
-                      {t('contact.scanWhatsApp')}
-                    </p>
-                    <div className="inline-block p-4 bg-background rounded-2xl shadow-inner animate-pulse-glow">
-                      <img
-                        src={`https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/919890679500&bgcolor=ffffff&color=8B2635`}
-                        alt="WhatsApp QR Code"
-                        className="w-40 h-40 md:w-48 md:h-48"
-                      />
-                    </div>
-                  </Card>
-                </motion.div>
               </motion.div>
 
               {/* Map */}
@@ -166,7 +146,7 @@ const ContactPage = () => {
               >
                 <Card className="overflow-hidden border-0 shadow-2xl rounded-3xl h-[400px] lg:h-[500px]">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.0!2d74.2291!3d16.6976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDQxJzUxLjQiTiA3NMKwMTMnNDQuOCJF!5e0!3m2!1sen!2sin!4v1234567890"
+                    src="https://maps.google.com?q=PATIL%20DAIRY,%20Laxmipuri,%20Kolhapur,%20Maharashtra&ftid=0x0:0xae952c157a9f1566&entry=gps&shh=CAE&lucs=,94297699,94275415,94284481,94231188,94280568,47071704,94218641,94282134,94286869&g_st=ic"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
@@ -187,7 +167,7 @@ const ContactPage = () => {
                     <div>
                       <h3 className="font-semibold text-foreground">Patil Dairy / पाटील डेअरी</h3>
                       <p className="text-sm text-muted-foreground">
-                        Bhaji Mandai, Laxmipuri, Kolhapur
+                        Near Bhaji Mandali, Laxmipuri, Kolhapur
                       </p>
                     </div>
                   </div>

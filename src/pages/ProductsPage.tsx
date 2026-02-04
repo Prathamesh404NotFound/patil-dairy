@@ -14,6 +14,15 @@ import paneerImg from '@/assets/product-paneer.jpg';
 import gheeImg from '@/assets/product-ghee.jpg';
 import buttermilkImg from '@/assets/product-buttermilk.jpg';
 
+// Import sweet images
+import besanLaddooImg from '/Sweets/Besan Laddoos.png';
+import gulabJamunImg from '/Sweets/Gulab-Jamun.png';
+import kalakandImg from '/Sweets/Kalakand.png';
+import madathaKajaImg from '/Sweets/Madatha Kaja.png';
+import motichoorLadduImg from '/Sweets/Motichoor Laddu.png';
+import mysorePakImg from '/Sweets/Mysore Pak.png';
+import ravaLadduImg from '/Sweets/Rava Laddu.png';
+
 const ProductsPage = () => {
   const { t, i18n } = useTranslation();
   const [activeCategory, setActiveCategory] = useState('all');
@@ -34,7 +43,6 @@ const ProductsPage = () => {
       nameMr: 'ताजे दूध',
       desc: t('products.milk.desc'),
       category: 'dairy',
-      price: '₹60/L',
     },
     {
       id: 'curd',
@@ -43,7 +51,6 @@ const ProductsPage = () => {
       nameMr: 'घरगुती दही',
       desc: t('products.curd.desc'),
       category: 'dairy',
-      price: '₹50/500g',
     },
     {
       id: 'paneer',
@@ -52,7 +59,6 @@ const ProductsPage = () => {
       nameMr: 'ताजे पनीर',
       desc: t('products.paneer.desc'),
       category: 'dairy',
-      price: '₹350/kg',
     },
     {
       id: 'ghee',
@@ -61,7 +67,6 @@ const ProductsPage = () => {
       nameMr: 'शुद्ध तूप',
       desc: t('products.ghee.desc'),
       category: 'dairy',
-      price: '₹650/kg',
     },
     {
       id: 'buttermilk',
@@ -70,7 +75,6 @@ const ProductsPage = () => {
       nameMr: 'ताक',
       desc: t('products.buttermilk.desc'),
       category: 'dairy',
-      price: '₹25/L',
     },
     {
       id: 'shrikhand',
@@ -79,7 +83,6 @@ const ProductsPage = () => {
       nameMr: 'श्रीखंड',
       desc: t('products.shrikhand.desc'),
       category: 'sweets',
-      price: '₹200/250g',
     },
     {
       id: 'basundi',
@@ -88,7 +91,6 @@ const ProductsPage = () => {
       nameMr: 'बासुंदी',
       desc: t('products.basundi.desc'),
       category: 'sweets',
-      price: '₹150/250g',
     },
     {
       id: 'pedha',
@@ -97,19 +99,74 @@ const ProductsPage = () => {
       nameMr: 'दूध पेढा',
       desc: t('products.pedha.desc'),
       category: 'sweets',
-      price: '₹400/500g',
+    },
+    {
+      id: 'besan-laddoo',
+      image: besanLaddooImg,
+      name: 'Besan Laddoo',
+      nameMr: 'बेसन लाडू',
+      desc: 'Traditional gram flour laddoos made with pure ghee and sugar',
+      category: 'sweets',
+    },
+    {
+      id: 'gulab-jamun',
+      image: gulabJamunImg,
+      name: 'Gulab Jamun',
+      nameMr: 'गुलाब जाम',
+      desc: 'Soft and spongy milk solids dumplings soaked in rose flavored sugar syrup',
+      category: 'sweets',
+    },
+    {
+      id: 'kalakand',
+      image: kalakandImg,
+      name: 'Kalakand',
+      nameMr: 'कलाकंद',
+      desc: 'Traditional Indian milk cake made from solidified milk and sugar',
+      category: 'sweets',
+    },
+    {
+      id: 'madatha-kaja',
+      image: madathaKajaImg,
+      name: 'Madatha Kaja',
+      nameMr: 'मादाथा काजा',
+      desc: 'Traditional Andhra sweet with layers of flaky pastry soaked in sugar syrup',
+      category: 'sweets',
+    },
+    {
+      id: 'motichoor-laddu',
+      image: motichoorLadduImg,
+      name: 'Motichoor Laddu',
+      nameMr: 'मोतीचूर लाडू',
+      desc: 'Tiny gram flour pearls fried and bound together with sugar syrup',
+      category: 'sweets',
+    },
+    {
+      id: 'mysore-pak',
+      image: mysorePakImg,
+      name: 'Mysore Pak',
+      nameMr: 'मैसूर पाक',
+      desc: 'Rich and decadent sweet made from gram flour, ghee and sugar',
+      category: 'sweets',
+    },
+    {
+      id: 'rava-laddu',
+      image: ravaLadduImg,
+      name: 'Rava Laddu',
+      nameMr: 'रवा लाडू',
+      desc: 'Semolina laddoos flavored with ghee, sugar and cardamom',
+      category: 'sweets',
     },
   ];
 
-  const filteredProducts = activeCategory === 'all' 
-    ? products 
+  const filteredProducts = activeCategory === 'all'
+    ? products
     : products.filter(p => p.category === activeCategory);
 
   const getWhatsAppLink = (productName: string) => {
     const message = i18n.language === 'en'
       ? t('products.orderProduct', { product: productName })
       : t('products.orderProduct', { product: productName });
-    return `https://wa.me/919890679500?text=${encodeURIComponent(message)}`;
+    return `https://wa.me/919588679599?text=${encodeURIComponent(message)}`;
   };
 
   const openLightbox = (index: number) => {
@@ -121,12 +178,12 @@ const ProductsPage = () => {
 
   return (
     <>
-      <SEO 
-        title={t('products.pageTitle')} 
+      <SEO
+        title={t('products.pageTitle')}
         description={t('products.pageSubtitle')}
-        path="/products" 
+        path="/products"
       />
-      
+
       <div className="content-wrapper">
         {/* Page Header */}
         <section className="py-16 md:py-24 bg-gradient-to-b from-cream to-background">
@@ -181,7 +238,7 @@ const ProductsPage = () => {
                   transition={{ duration: 0.3, delay: index * 0.05 }}
                 >
                   <Card className="group overflow-hidden border-0 shadow-lg hover-lift bg-card h-full">
-                    <div 
+                    <div
                       className="relative aspect-square overflow-hidden cursor-pointer"
                       onClick={() => openLightbox(index)}
                     >
@@ -192,11 +249,7 @@ const ProductsPage = () => {
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                      
-                      {/* Price Badge */}
-                      <div className="absolute top-4 right-4 px-3 py-1.5 rounded-full gradient-maroon text-primary-foreground text-sm font-semibold shadow-lg">
-                        {product.price}
-                      </div>
+
 
                       {/* Hover Overlay */}
                       <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">

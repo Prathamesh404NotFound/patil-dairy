@@ -9,7 +9,7 @@ interface SEOProps {
 
 const SEO = ({ title, description, path = '' }: SEOProps) => {
   const { t, i18n } = useTranslation();
-  
+
   const siteTitle = t('siteTitle');
   const siteDescription = description || t('siteDescription');
   const fullTitle = title ? `${title} | ${siteTitle}` : siteTitle;
@@ -24,10 +24,12 @@ const SEO = ({ title, description, path = '' }: SEOProps) => {
     alternateName: 'पाटील डेअरी',
     description: siteDescription,
     url: siteUrl,
-    telephone: '+91-98906-79500',
+    telephone: '+91-95886-79599',
+    creator: 'Code Catalyst',
+    additionalTelephone: '+91-7721906820',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Bhaji Mandai, near Aajra Transport, Laxmipuri',
+      streetAddress: 'Near Bhaji Mandali, Laxmipuri',
       addressLocality: 'Kolhapur',
       addressRegion: 'Maharashtra',
       postalCode: '416002',
@@ -56,7 +58,7 @@ const SEO = ({ title, description, path = '' }: SEOProps) => {
       <meta name="description" content={siteDescription} />
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href={fullUrl} />
-      
+
       {/* Open Graph */}
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={siteDescription} />
@@ -64,12 +66,12 @@ const SEO = ({ title, description, path = '' }: SEOProps) => {
       <meta property="og:type" content="website" />
       <meta property="og:locale" content={i18n.language === 'mr' ? 'mr_IN' : 'en_IN'} />
       <meta property="og:site_name" content="Patil Dairy" />
-      
+
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={siteDescription} />
-      
+
       {/* Schema.org JSON-LD */}
       <script type="application/ld+json">
         {JSON.stringify(localBusinessSchema)}

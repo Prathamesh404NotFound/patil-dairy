@@ -17,19 +17,19 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      
+
       setIsScrolled(currentScrollY > 50);
-      
+
       // Hide/show on scroll
       if (currentScrollY > lastScrollY && currentScrollY > 100) {
         setIsVisible(false);
       } else {
         setIsVisible(true);
       }
-      
+
       setLastScrollY(currentScrollY);
     };
-    
+
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, [lastScrollY]);
@@ -69,7 +69,7 @@ const Header = () => {
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 group">
-          <motion.div 
+          <motion.div
             className="w-10 h-10 rounded-full gradient-maroon flex items-center justify-center shadow-lg"
             whileHover={{ scale: 1.05 }}
           >
@@ -119,12 +119,12 @@ const Header = () => {
             <FiGlobe className="w-4 h-4" />
             {i18n.language === 'en' ? 'मराठी' : 'English'}
           </Button>
-          
+
           <Button
             asChild
             className="gradient-maroon text-primary-foreground shadow-lg hover:shadow-xl transition-shadow"
           >
-            <a href="tel:+919890679500" className="gap-2">
+            <a href="tel:+919588679599" className="gap-2">
               <FiPhone className="w-4 h-4" />
               {t('cta.call')}
             </a>
@@ -179,7 +179,7 @@ const Header = () => {
               ))}
               <div className="flex gap-3 pt-4 mt-2 border-t border-border">
                 <Button asChild className="gradient-maroon flex-1">
-                  <a href="tel:+919890679500" className="gap-2">
+                  <a href="tel:+919588679599" className="gap-2">
                     <FiPhone className="w-4 h-4" />
                     {t('cta.call')}
                   </a>

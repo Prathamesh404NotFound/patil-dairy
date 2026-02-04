@@ -37,7 +37,7 @@ const HomePage = () => {
   return (
     <>
       <SEO path="/" />
-      
+
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background */}
@@ -99,7 +99,7 @@ const HomePage = () => {
                 className="gradient-maroon text-primary-foreground shadow-xl hover:shadow-2xl transition-all text-lg px-8 py-6"
               >
                 <a
-                  href="https://wa.me/919890679500?text=Hello%2C%20I%20would%20like%20to%20order%20fresh%20dairy%20products"
+                  href="https://wa.me/919588679599?text=Hello%2C%20I%20would%20like%20to%20order%20fresh%20dairy%20products"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="gap-3"
@@ -115,7 +115,7 @@ const HomePage = () => {
                 variant="outline"
                 className="text-lg px-8 py-6 border-2 hover:bg-primary/5"
               >
-                <a href="tel:+919890679500" className="gap-3">
+                <a href="tel:+919588679599" className="gap-3">
                   <FiPhone className="w-5 h-5" />
                   {t('cta.call')}
                 </a>

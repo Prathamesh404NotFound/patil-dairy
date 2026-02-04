@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import FloatingCTA from './FloatingCTA';
+import CreatorSection from './CreatorSection';
 
 interface LayoutProps {
   children: ReactNode;
@@ -26,6 +27,7 @@ const Layout = ({ children }: LayoutProps) => {
           {children}
         </motion.main>
       </AnimatePresence>
+      <CreatorSection />
       <Footer />
       <FloatingCTA />
     </div>

@@ -134,8 +134,8 @@ const resources = {
         pageTitle: "Get In Touch",
         subtitle: "We'd love to serve you",
         pageSubtitle: "Visit our shop or reach out through WhatsApp for orders",
-        address: "Bhaji Mandai, near Aajra Transport, Laxmipuri, Kolhapur 416002",
-        phone: "+91 98906 79500",
+        address: "Near Bhaji Mandali, Laxmipuri, Kolhapur 416002",
+        phone: "+91 95886 79599",
         hours: "Open Daily: 6:00 AM - 9:00 PM",
         scanWhatsApp: "Scan to WhatsApp",
         getDirections: "Get Directions"
@@ -290,8 +290,8 @@ const resources = {
         pageTitle: "संपर्क साधा",
         subtitle: "आम्हाला तुमची सेवा करायला आवडेल",
         pageSubtitle: "आमच्या दुकानाला भेट द्या किंवा ऑर्डरसाठी व्हाट्सअॅपद्वारे संपर्क साधा",
-        address: "भाजी मंडई, आजरा ट्रान्सपोर्ट जवळ, लक्ष्मीपुरी, कोल्हापूर 416002",
-        phone: "+91 98906 79500",
+        address: "भाजी मंडालीजवळ, लक्ष्मीपुरी, कोल्हापूर 416002",
+        phone: "+91 95886 79599",
         hours: "रोज उघडे: सकाळी 6:00 - रात्री 9:00",
         scanWhatsApp: "व्हाट्सअॅपसाठी स्कॅन करा",
         getDirections: "दिशानिर्देश मिळवा"

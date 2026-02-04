@@ -45,7 +45,7 @@ const Footer = () => {
               </div>
             </Link>
             <p className="text-background/70 mb-6 text-sm">{t('footer.tagline')}</p>
-            
+
             {/* Social Links */}
             <div className="flex gap-3">
               <a
@@ -58,7 +58,7 @@ const Footer = () => {
                 <FiInstagram className="w-5 h-5" />
               </a>
               <a
-                href="https://wa.me/919890679500"
+                href="https://wa.me/919588679599"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 rounded-full bg-background/10 hover:bg-[#25D366] transition-all duration-300"
@@ -100,14 +100,14 @@ const Footer = () => {
             <h4 className="font-semibold text-lg mb-4">{t('footer.contactInfo')}</h4>
             <div className="space-y-3">
               <a
-                href="tel:+919890679500"
+                href="tel:+919588679599"
                 className="flex items-center gap-3 text-background/70 hover:text-primary transition-colors text-sm"
               >
                 <FiPhone className="w-4 h-4 flex-shrink-0" />
                 {t('contact.phone')}
               </a>
               <a
-                href="https://maps.google.com/?q=16.6976,74.2291"
+                href="https://maps.google.com?q=PATIL%20DAIRY,%20Laxmipuri,%20Kolhapur,%20Maharashtra&ftid=0x0:0xae952c157a9f1566&entry=gps&shh=CAE&lucs=,94297699,94275415,94284481,94231188,94280568,47071704,94218641,94282134,94286869&g_st=ic"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-start gap-3 text-background/70 hover:text-primary transition-colors text-sm"
